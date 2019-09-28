@@ -12,7 +12,7 @@ class CheatGame {
     }
 
     setPlayerScore() {
-        
+
     }
 
     createPlayer(name, type, cheatOption) {
@@ -31,8 +31,8 @@ class CheatGame {
             p2Score = 0;
         let prevPlayMaintainer = {P1 :"", P2: ""}
         for (let i = 0; i < this.iterations; i++) {
-            let p1HitValue = this.playerOne.play(prevPlayMaintainer["P2"]);
-            let p2HitValue = this.playerTwo.play(prevPlayMaintainer["P1"]);
+            let p1HitValue = this.playerOne.play(iteration, prevPlayMaintainer["P2"]);
+            let p2HitValue = this.playerTwo.play(iteration, prevPlayMaintainer["P1"]);
 
 
             console.log('Iterattion ' + i)
