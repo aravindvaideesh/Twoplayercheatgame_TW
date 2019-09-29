@@ -41,11 +41,6 @@ class CheatGame {
         console.log('P2 ' + this.gamePlayerTwo.playerMachine.name + 'Score ' + this.gamePlayerTwo.playerScore);
     }
 
-    createPlayer(name, type) {
-
-        return new Player[config.playerTypes[type]](name);
-    }
-
     runGame() {
 
         for (let i = 0; i < this.iterations; i++) {
@@ -67,14 +62,6 @@ class CheatGame {
 }
 
 module.exports = CheatGame
-
-/* function startGame() {
-    let cg = new CheatGame(6, { name: "Ara", type: "PLAYER" }, { name: "Gan", type: "GRUDGER" });
-    cg.runGame();
-    cg.printGameResult();
-}
-
-startGame(); */
 
 
 
